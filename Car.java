@@ -1,9 +1,9 @@
 public class Car {
-    String model;
-    int year;
-    double price;
-    String color;
-    int power;
+    private String model;
+    private int year;
+    private double price;
+    private String color;
+    private int power;
     boolean status;
 
     Car(String model, int year, double price, String color, int power){
@@ -23,6 +23,46 @@ public class Car {
         this.power = 0;
     }
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+    
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+    
     public void statusCar() {
         if (status == false) {
             System.out.println("Двигатель - заглушен");
@@ -60,14 +100,6 @@ public class Car {
         } else {
             System.out.println("Мы едем по адресу: " + adres);
         }
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String str) {
-        model = str;
     }
 
     public boolean equals(Object obj) {
